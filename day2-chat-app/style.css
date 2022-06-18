@@ -1,0 +1,151 @@
+html, body{
+    font-family: 'Work Sans', sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+svg{
+    height: 17px;
+    width: 17px;
+}
+path, rect{
+    fill: #9a9a9a;
+}
+.container{
+    display: flex;
+    height: 100%;
+}
+.left-container{
+    /* background-color: #FAFCFF; */
+    background-color: #FAFCFF;
+    width: 30%;
+    display: flex;
+}
+.menu-app{
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    height: 55%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.menu{
+    width: 17%;
+    background-color: #F6F8FC;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.user{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3vh;
+}
+.left-container img{
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+}
+.middle-container img, .right-container img{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+}
+.user img{
+    border-radius: 7px;
+}
+.contact{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-container > *{
+    margin :5vh;
+}
+.title{
+    color: #296EFF;
+    font-size: 3.5vh;
+    font-weight: bolder;
+}
+.searchbar{
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 1.5vh 5vh;
+    border-radius: 7px;
+}
+
+.searchbar input{
+    border: none;
+    background-color: #f1f1f1;
+    margin-left: 1vh;
+    color:#9a9a9a;
+}
+
+.message-group{
+    display: flex;
+    flex-direction: column;
+}
+.message-type{
+    font-size: small;
+    display: flex;
+    align-items: center;
+    color: #9a9a9a;
+}
+.message-type > *{
+    margin-left: 1vh;
+}
+.contact-list{
+    display: flex;
+    flex-direction: column;
+}
+.contact-info, .contact-img, .contact-name-time, .contact-text-noti{
+    display: flex;
+    align-items: center;
+}
+.contact-info{
+    margin-top: 2.8vh;
+}
+.contact-img{
+    width: 20%;
+}
+.contact-data{
+    width: 80%;
+}
+.contact-name-time, .contact-text-noti{
+    justify-content: space-between;
+}
+.contact-name{
+    font-weight: bold;
+}
+.contact-text{
+    font-size: small;
+    color: #9a9a9a;
+}
+.contact-time{
+    color: #7e7e7e;
+    font-size: small;
+}
+.count{
+    color: white;
+    font-size: small;
+    border-radius: 100%;
+    background-color: rgb(219, 45, 45);
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ .right-container{
+    background-color: #FAFCFF;
+    width: 22%;
+}
+.middle-container{
+    background-color: #F6F8FC;
+    width: 60%;
+    border: 2px solid #e3e6f1;
+}
