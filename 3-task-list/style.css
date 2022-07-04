@@ -1,0 +1,17 @@
+#task-container, #done-task-container{
+    min-height: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background-color: rgb(246, 246, 246);
+}
+.display-task{
+    display: flex;
+}
+.task-content{
+    padding: 1rem;
+    flex-grow: 1;
+}
+.input-container{
+    display: flex;
+}
