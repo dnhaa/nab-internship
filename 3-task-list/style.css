@@ -1,9 +1,78 @@
+:root{
+    --main-bg-color: #212B38;
+    --main-input-color: #3d526d;
+    --main-color: #5AFFE7;
+    --main-color-dark: #0BC6AB;
+    --main-font:Tahoma, Geneva, sans-serif;
+}
+body{
+    overflow-x: hidden;
+    font-family:Tahoma, Geneva, sans-serif;
+    background-color: #212B38;
+    color: #5AFFE7;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+button{
+    font-family:var(--main-font);
+    font-weight: bold;
+    padding: 1em 3em;
+    background-color: var(--main-input-color);
+    border: none;
+    color: var(--main-color);
+    font-family: var(--main-font);
+}
+button:hover{
+    transition-duration: 1s;
+    cursor: pointer;
+    color: var(--main-color-dark);
+    background-color: #324258;
+}
+input{
+    background-color: var(--main-color);
+    border: none;
+    padding: 1em;
+    color: var(--main-input-color);
+    font-family: var(--main-font);
+    border-radius: 5px 0 0 5px;
+}
+input:focus{
+    outline: none;
+    background-color: var(--main-color);
+}
+input::placeholder{
+    color: var(--main-color-dark);
+    font-style: italic;
+}
+.input-container{
+    padding-top: 1em;
+    position: relative;
+    display: flex;
+    justify-content: stretch;
+    width: 100%;
+}
+#new-task{
+    flex:1;
+}
+#add-button{
+    position: absolute;
+    right: 0;
+}
 #task-container, #done-task-container{
-    min-height: 3rem;
+    padding: 0.5em 1.5em;
+    border-radius: 5px;
+    margin: 1rem auto;
+    min-height: 10rem;
     display: flex;
     flex-direction: column;
-    width: 500px;
-    background-color: rgb(246, 246, 246);
+    width: 600px;
+    background-color: var(--main-input-color);
+}
+#done-task-container{
+    color: #7e8ea3;
 }
 .display-task{
     display: flex;
@@ -12,6 +81,8 @@
     padding: 1rem;
     flex-grow: 1;
 }
-.input-container{
-    display: flex;
+#note{
+    font-size: small;
+    font-style: italic;
+    margin: 1em 0;
 }

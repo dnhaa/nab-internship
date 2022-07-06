@@ -9,19 +9,24 @@
 </head>
 <body>
     <div>
-        <div>My List</div>
+        <h1>Ha's To-do List</h1>
+        <h3 id="task-title">Ongoing</h3>
+        <div id="note">
+            Left checkbox to check items off the list. Right checkbox to prioritise tasks!
+        </div>
         <div id="task-container">
         </div>
         
-        <div id="done-task-title">Completed</div>
+        <h3 id="done-task-title">Completed</h3>
         <div id="done-task-container">
         </div>
 
         <div class="input-container">
-            <input type="text" id="new-task">
-            <input type="submit" id="add-button" value="Add"></input>
+            <input type="text" id="new-task" placeholder="What to do today?">
+            <button id="add-button">Add</button>
         </div>
     </div>
+    
     <script src="script.js"></script>
     
 </body>
