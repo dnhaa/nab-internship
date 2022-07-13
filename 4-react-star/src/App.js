@@ -1,11 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import {Star} from './Star.jsx';
+import {Stars} from './Stars.jsx';
 
 function App() {
-  const arr = [false, false, false, false, false].map(
-    (status) => <Star active={status} />
-);
   return (
     <div className="App">
       <header className="App-header">
@@ -14,7 +11,8 @@ function App() {
           Hello, {Name(user)}
         </div>
         <div style={{marginTop: "1rem"}}>
-          {arr}
+          <Stars />
+
         </div>
         
       </header>
