@@ -9,15 +9,13 @@ export function Stars (){
                 [1, 2, 3, 4, 5].map((number) => 
                 <div onClick={() => {
                     setRating(number);
-                    
                 }}>
-                    {console.log("rating: " + rating + "; number: " + number)}
                     <Star active={number <= rating ? true : false}/>
                 </div>
                 )
             }
-            
-
         </div>
     );
 }
+
+//439d4b804bc8187953eb36d2a8c26a02
