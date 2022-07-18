@@ -28,19 +28,20 @@ export function Weather() {
                 </div> : 
                 <div>
                 </div>}
-                <form>
                     <input
-                        placeholder='Input a city...'
-                        onChange={inputCity => {
-                            if (inputCity.target.value.trim === ""){
-                                setCity("London")
-                            } else {
-                                setCity(inputCity.target.value)
+                        placeholder='Enter a city...'
+                        onKeyDown={
+                            inputCity => {
+                                if (inputCity.key === "Enter"){
+                                    if (inputCity.target.value.trim === ""){
+                                        setCity("London")
+                                    } else {
+                                        setCity(inputCity.target.value)
+                                    }
+                                }
                             }
-                            
-                        }}
+                        }
                     ></input>
-                </form>
             </div>
         );
     
